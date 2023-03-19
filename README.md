@@ -63,11 +63,12 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  In the create action, it should be Toy.create(toy_params) instead of Toys.create(toy_params).
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged:I modified the update action to only update the likes attribute of the toy:
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: updated routes.rb
